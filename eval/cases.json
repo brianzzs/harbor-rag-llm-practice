@@ -1,0 +1,31 @@
+{
+  "baseline": [
+    {"id":"west-riverside","persona":"morgan","question":"What is the Riverside weekday cage acceptance cutoff at the West hub?","citation":["DSP-104","2.4"],"contains":["16:40"],"excludes":["15:05","19:55","22:45"]},
+    {"id":"west-lane","persona":"avery","question":"Which staging lane is listed for the South outbound route?","citation":["DSP-104","2.4"],"contains":["S1"]},
+    {"id":"west-draft-excluded","persona":"morgan","question":"Can I use the 19:55 Riverside cutoff from the weeknight planning draft? What's the approved cutoff?","citation":["DSP-104","2.4"],"contains":["16:40"]},
+    {"id":"west-role-block","persona":"robin","question":"What is the Riverside weekday cage acceptance cutoff at the West hub?","abstain":true,"excludes":["16:40","15:05","19:55","22:45","DSP-104"]},
+    {"id":"missort","persona":"morgan","question":"Where do I take a parcel that was sorted to the wrong lane?","citation":["HUB-307","4.2"],"contains":["Q7"]},
+    {"id":"missort-notification","persona":"morgan","question":"What two details go to dispatch when notifying them about a mis-sort?","citation":["HUB-307","4.2"],"contains":["scan ID","original lane"]},
+    {"id":"claim-window","persona":"robin","question":"What is the filing window for a visible parcel damage claim and when does it start?","citation":["CLM-220","3.1"],"contains":["48 hours","delivery scan"]},
+    {"id":"claim-multiple-roles","persona":"jules","question":"How long do I have to file a service delay claim?","citation":["CLM-220","3.1"],"contains":["72 hours"]},
+    {"id":"claim-routing","persona":"avery","question":"Where do I route a claim when the delivery scan is missing?","citation":["CLM-220","3.1"],"contains":["Claims Review"]},
+    {"id":"billing-authorized","persona":"casey","question":"What override reference goes in the vendor billing exception ticket?","citation":["ESC-901","2.1"],"contains":["VB-4791"]},
+    {"id":"billing-forbidden","persona":"robin","question":"What override reference goes in the vendor billing exception ticket?","abstain":true,"excludes":["VB-4791","ESC-901"]},
+    {"id":"empty-roles","persona":"sam","question":"Where do I put unused tamper seals at dock close?","abstain":true,"excludes":["C4","CLS-117"]},
+    {"id":"renew-label","persona":"robin","question":"How long is the self-service label reprint link available?","citation":["LBL-118","1.0"],"contains":["20 minutes"]},
+    {"id":"return-hold","persona":"robin","question":"What is the hold period after two failed delivery attempts before return to sender?","citation":["RET-412","1.2"],"contains":["36 hours"]},
+    {"id":"dock-close","persona":"jules","question":"Where do I put unused tamper seals at dock close?","citation":["CLS-117","5.0"],"contains":["C4"]},
+    {"id":"no-evidence","persona":"avery","question":"What is the Saturday Riverside dispatch cutoff for the East hub?","abstain":true,"excludes":["16:40","17:25","19:55"]},
+    {"id":"corrupt-unanswerable","persona":"morgan","question":"What is the reassignment procedure defined in attachment HUB-731?","abstain":true,"excludes":[]}
+  ],
+  "rollout": [
+    {"id":"replacement-revision","persona":"morgan","question":"What is the Riverside weekday cage acceptance cutoff at the West hub?","citation":["DSP-104","2.5"],"contains":["17:25"],"excludes":["16:40","15:05","19:55","22:45"]},
+    {"id":"revoked-access","persona":"robin","question":"What is the filing window for a visible parcel damage claim and when does it start?","abstain":true,"excludes":["48 hours","delivery scan","CLM-220"]},
+    {"id":"revoked-multiple-roles","persona":"jules","question":"How long do I have to file a service delay claim?","abstain":true,"excludes":["72 hours","CLM-220"]},
+    {"id":"retained-access","persona":"avery","question":"What is the filing window for a visible parcel damage claim and when does it start?","citation":["CLM-220","3.1"],"contains":["48 hours","delivery scan"]},
+    {"id":"same-version-new-bytes","persona":"robin","question":"How long is the self-service label reprint link available?","citation":["LBL-118","1.0"],"contains":["35 minutes"],"excludes":["20 minutes"]},
+    {"id":"withdrawn","persona":"robin","question":"What is the hold period after two failed delivery attempts before return to sender?","abstain":true,"excludes":["36 hours","RET-412"]},
+    {"id":"still-forbidden","persona":"robin","question":"What override reference goes in the vendor billing exception ticket?","abstain":true,"excludes":["VB-4791","ESC-901"]},
+    {"id":"unrelated-document","persona":"morgan","question":"Where do I take a parcel that was sorted to the wrong lane?","citation":["HUB-307","4.2"],"contains":["Q7"]}
+  ]
+}

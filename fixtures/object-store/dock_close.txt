@@ -1,0 +1,11 @@
+Dock close checklist
+CLS-117 / Revision 5.0
+
+1. Final dock walk
+After the last outbound load leaves, the closing lead checks the empty bays.
+
+2. Unused seals
+Return unused tamper seals to Locker C4 before signing the close log.
+
+3. Close record
+Enter the closing lead initials and the final sweep time in the dock log.
